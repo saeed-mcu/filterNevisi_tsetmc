@@ -1,5 +1,78 @@
 # filter tsetmc
 
+### قالب کد نویسی
+
+- All TSETMC predefined variable must be enclosed in parentheses.
+
+```
+true==function()
+{
+
+    //------------write your code------------
+
+}()
+
+```
+
+> if return true , found
+>
+> if return false, Not found
+
+Exampel:
+
+```
+true==function()
+{
+    var MinPrice=function(){
+
+        var min=[ih][0].PriceMin;
+        var ipos;
+
+        for(ipos=0;ipos<21;ipos++)
+                if(min>[ih][ipos].PriceMin)
+                  min=[ih][ipos].PriceMin;
+
+        return min;
+    };
+
+    if((pl)<MinPrice())
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}()
+```
+
+### فیلدهای ساده قابل استفاده در فیلتر
+
+```
+(l18)           نماد
+(l30)           نام
+(tno)           تعداد معاملات
+(tvol)          حجم معاملات
+(tval)          ارزش معاملات
+(py)            قیمت دیروز
+(pf)            اولین قیمت
+(pmin)          کمترین قیمت
+(pl)            آخرین قیمت
+(plc)           تغییر آخرین قیمت
+(plp)           درصد تغییر آخرین قیمت
+(pc)            قیمت پایانی
+(pcc)           تغییر قیمت پایانی
+(pcp)           درصد تغییر قیمت پایانی
+(eps)           eps
+(pe)            p/e
+(tmin)          آستانه مجاز پایین
+(tmax)          آستانه مجاز بالا
+(z)             تعداد سهام
+(mv)            ارزش بازار
+(bvol)          حجم مبنا
+(cs)            گروه صنعت
+```
+
 ### اطلاعات حقیقی و حقوقی در فیلتر
 
 ```
